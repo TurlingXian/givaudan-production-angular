@@ -6,7 +6,11 @@ export interface BaseEntity {
   id: string | null;
 }
 
-export interface Widget extends BaseEntity {
+export interface Contact extends BaseEntity {
+  id: string;
   name: string;
-  address: string;
+  gender: string;
+  company: string;
+  email: string;
+  photo?: string;
 }

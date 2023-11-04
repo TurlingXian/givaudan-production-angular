@@ -10,13 +10,14 @@ import { AppComponent } from './app.component';
 import { ContactDetailComponent } from './contacts/contact-detail/contact-detail.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { RoutingModule } from './routing.module';
-import { StoreModule } from '@ngrx/store';
+import { DeleteDialogComponent } from './contacts/delete-dialog/delete-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactDetailComponent,
     ContactsComponent,
+    DeleteDialogComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -27,9 +28,11 @@ import { StoreModule } from '@ngrx/store';
     HttpClientModule,
     MaterialModule,
     RoutingModule,
-    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [
+    DeleteDialogComponent
+  ],
 })
 export class AppModule { }
