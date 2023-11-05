@@ -13,7 +13,6 @@ export class ContactsEffects {
     ofType(ContactsActions.loadContacts),
     fetch({
       run: (action) => {
-        console.log('123');
         return this.contactsService
           .all()
           .pipe(

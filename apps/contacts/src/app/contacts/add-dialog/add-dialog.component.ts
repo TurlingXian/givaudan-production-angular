@@ -28,7 +28,6 @@ export class AddDialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) {
     if (data) {
-      console.log('data', data);
       this.id = data.id;
       this.name = data.name;
       this.age = data.age;
@@ -67,7 +66,6 @@ export class AddDialogComponent implements OnInit {
   }
 
   openDialog(): void {
-    console.log(this.wasFormChanged);
     if (this.addContactForm.dirty) {
       const dialogRef = this.dialog.open(DeleteDialogComponent, {
         data: {

@@ -2,12 +2,11 @@
   "contacts": [
     {
       "id": "5b2eee0af534aab9ece2f890",
-      "age": "23",
       "name": "Leigh Burris",
-      "gender": "female",
-      "company": "KINETICUT",
+      "age": 23,
       "email": "leighburris@kineticut.com",
-      "photo\r": "https://randomuser.me/api/portraits/men/43.jpg\r"
+      "company": "KINETICUT",
+      "gender": "female"
     },
     {
       "id": "5b2eee0ac42f319d1c980d93",
@@ -47,12 +46,11 @@
     },
     {
       "id": "5b2eee0a8c166f1515f51513",
-      "age": "27",
       "name": "Robles Romero",
-      "gender": "male",
-      "company": "MAKINGWAY",
+      "age": 27,
       "email": "roblesromero@makingway.com",
-      "photo\r": "https://randomuser.me/api/portraits/men/21.jpg\r"
+      "company": "MAKINGWAY",
+      "gender": "male"
     },
     {
       "id": "5b2eee0a7f5b9af99637f6e0",
@@ -865,60 +863,6 @@
       "photo\r": "https://randomuser.me/api/portraits/men/31.jpg\r"
     },
     {
-      "id": "M3YHTBV",
-      "age": "30",
-      "name": "asdasf",
-      "gender": "female",
-      "company": null,
-      "email": "123@123",
-      "photo\r": "\r"
-    },
-    {
-      "id": "vagZzkc",
-      "age": "123",
-      "name": "alison",
-      "gender": "male",
-      "company": "21312",
-      "email": "2131@123",
-      "photo\r": "\r"
-    },
-    {
-      "id": "2y2h9qd",
-      "age": "123",
-      "name": "alison",
-      "gender": "male",
-      "company": "21312",
-      "email": "2131@123",
-      "photo\r": "\r"
-    },
-    {
-      "id": "N6UjyN2",
-      "age": null,
-      "name": null,
-      "gender": null,
-      "company": null,
-      "email": null,
-      "photo\r": null
-    },
-    {
-      "id": "TVkQrDq",
-      "age": null,
-      "name": null,
-      "gender": null,
-      "company": null,
-      "email": null,
-      "photo\r": null
-    },
-    {
-      "id": "KVSXtVM",
-      "age": null,
-      "name": null,
-      "gender": null,
-      "company": null,
-      "email": null,
-      "photo\r": null
-    },
-    {
       "id": "7s5fFE_",
       "age": "24",
       "name": "Leigh Burris",
@@ -926,12 +870,6 @@
       "company": "KINETICUT",
       "email": "leighburris@kineticut.com",
       "photo\r": "https://randomuser.me/api/portraits/men/43.jpg\r"
-    },
-    {
-      "id": "_IJ4GDX"
-    },
-    {
-      "id": "11TLDJQ"
     }
   ]
 }

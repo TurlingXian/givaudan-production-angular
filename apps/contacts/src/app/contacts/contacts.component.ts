@@ -48,7 +48,6 @@ export class ContactsComponent implements OnInit {
 
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
-      console.log('dataSource', res, this.dataSource);
     });
   }
 

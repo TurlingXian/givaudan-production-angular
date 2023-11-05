@@ -54,7 +54,6 @@ export class ContactsFacade {
   }
 
   dispatch(action: Action) {
-    console.log(action, 'action');
     this.store.dispatch(action);
   }
 }
