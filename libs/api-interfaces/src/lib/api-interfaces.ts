@@ -12,5 +12,5 @@ export interface Contact extends BaseEntity {
   gender: string;
   company: string;
   email: string;
-  photo?: string;
+  age: number;
 }

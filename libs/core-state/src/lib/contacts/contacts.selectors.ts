@@ -36,6 +36,7 @@ export const getSelectedContactId = createSelector(
 
 const emptyContact: Contact = {
   id: null,
+  age: null,
   name: '',
   gender: '',
   company: '',

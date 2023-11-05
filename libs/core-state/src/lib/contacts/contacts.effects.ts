@@ -18,7 +18,6 @@ export class ContactsEffects {
           .all()
           .pipe(
             map((contacts: Contact[]) => {
-              console.log('map');
               return ContactsActions.loadContactsSuccess({ contacts })
             }
 
@@ -27,7 +26,7 @@ export class ContactsEffects {
       },
 
       onError: (action, error) => {
-        console.log('error');
+        alert('error');
         return EMPTY;
       },
     })
@@ -44,7 +43,10 @@ export class ContactsEffects {
               ContactsActions.loadContactSuccess({ contact })
             )
           ),
-      onError: (action, error) => ContactsActions.loadContactFailure({ error }),
+      onError: (action, error) => {
+        alert('error');
+        return EMPTY;
+      },
     })
   ));
 
@@ -59,7 +61,10 @@ export class ContactsEffects {
               ContactsActions.createContactSuccess({ contact })
             )
           ),
-      onError: (action, error) => ContactsActions.createContactFailure({ error }),
+      onError: (action, error) => {
+        alert('error');
+        return of(EMPTY);
+      },
     })
   ));
 
@@ -74,7 +79,10 @@ export class ContactsEffects {
               ContactsActions.updateContactSuccess({ contact })
             )
           ),
-      onError: (action, error) => ContactsActions.updateContactFailure({ error }),
+      onError: (action, error) => {
+        alert('error');
+        return EMPTY;
+      },
     })
   ));
 
@@ -89,7 +97,10 @@ export class ContactsEffects {
               ContactsActions.deleteContactSuccess({ contact })
             )
           ),
-      onError: (action, error) => ContactsActions.deleteContactFailure({ error }),
+      onError: (action, error) => {
+        alert('error');
+        return EMPTY;
+      },
     })
   ));
 

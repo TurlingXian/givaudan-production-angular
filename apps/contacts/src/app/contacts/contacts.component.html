@@ -1,4 +1,16 @@
-1234
+<div class="button-group">
+    <button mat-raised-button color="primary" (click)="openAddContactDialog()">Add</button>
+    <div style="display: inline-block;">
+        <input type="file" style="display: none" #fileInput
+            accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+            (change)="importDataFromCSV($event)" />
+        <button mat-raised-button class="file-select-button" (click)="importCSV()">
+            <mat-icon>attach_file</mat-icon>
+            Choose file
+        </button>
+    </div>
+    <button mat-raised-button (click)="exportCSV()">Export CSV</button>
+</div>
 
 <div class="example-header">
     <mat-form-field>
@@ -13,7 +25,8 @@
         <!-- ID Column -->
         <ng-container matColumnDef="id">
             <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
-            <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+            <mat-cell *matCellDef="let row" style="cursor: pointer;" (click)="openContactInfo(row)"> {{row.id}}
+            </mat-cell>
         </ng-container>
 
         <!-- Age Column -->
@@ -50,10 +63,10 @@
         <ng-container matColumnDef="actions">
             <mat-header-cell *matHeaderCellDef></mat-header-cell>
             <mat-cell *matCellDef="let row;">
-                <button mat-icon-button>
+                <button mat-icon-button (click)="openAddContactDialog(row)">
                     <mat-icon>edit</mat-icon>
                 </button>
-                <button mat-icon-button>
+                <button mat-icon-button (click)="openDeleteDialog(row)">
                     <mat-icon color="warn">delete</mat-icon>
                 </button>
             </mat-cell>
@@ -66,5 +79,3 @@
 
     <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
 </div>
-
-<givaudan-production-angular-contact-detail></givaudan-production-angular-contact-detail>
